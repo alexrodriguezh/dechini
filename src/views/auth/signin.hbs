@@ -1,0 +1,72 @@
+<div class="page login-page">
+    <div class="container d-flex align-items-center">
+    <div class="form-holder has-shadow">
+        <div class="row">
+        <!-- Logo & Information Panel-->
+        <div class="col-lg-6">
+            <div class="info d-flex align-items-center">
+            <div class="content">
+                <div class="dechinilogo"> <img src="img/logo2.png" alt="..." ></div>
+                <div class="logo">
+                <h2>Informando</h2>
+                </div>
+                <p>"Inicia sesión y genera un ticket."</p>
+            </div>
+            </div>
+        </div>
+        <!-- Form Panel    -->
+        <div class="col-lg-6 bg-white">
+            <div class="form d-flex align-items-center">
+            <div class="content">
+                <form action="/signin" method="POST" class="form-validate">
+                <div class="form-group">
+                    <input id="login-email" type="email" name="email" required data-msg="Please enter your email" class="input-material">
+                    <label for="login-email" class="label-material">Email</label>
+                </div>
+                <div class="form-group">
+                    <input id="login-password" type="password" name="password" required data-msg="Please enter your password" class="input-material">
+                    <label for="login-password" class="label-material">Password</label>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-block">
+                        SignIn
+                    </button>
+                </div>
+                <!-- This should be submit button but I replaced it with <a> for demo purposes-->
+                </form><a href="#" class="forgot-pass">Olvidaste tu contraseña?</a><br><small>No tienes una cuenta? </small><a href="/signup" class="signup">Signup</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+{{!-- <div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3>SignIn</h3>
+                </div>
+                <div class="card-body">
+                    <img src="/img/logo.png" alt="Logo" class="card-img-top mx-auto m-2 rounded-circle w-50">
+                    <form action="/signin" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="username" placeholder="Username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" placeholder="Password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                SignIn
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> --}}
